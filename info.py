@@ -50,7 +50,7 @@ START_MESSAGE = environ.get('START_MESSAGE', '👋 𝙷𝙴𝙻𝙾 {user}\n\n�
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", script.BUTTON_LOCK_TEXT)
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', script.FORCE_SUB_TEXT)
 WELCOM_PIC = environ.get("WELCOM_PIC", script.WELCOM_PIC)
-WELCOM_TEXT = environ.get("WELCOM_TEXT", script.WELCOME_TEXT)
+WELCOM_TEXT = environ.get("WELCOM_TEXT", 'Hai {user}\nwelcome to {chat}')
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 

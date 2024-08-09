@@ -2,6 +2,7 @@ import os, math, logging
 import logging.config
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
+from Script import script 
 #from Telethroid import started_telethroid
 from database.ia_filterdb import Media
 from database.users_chats_db import db

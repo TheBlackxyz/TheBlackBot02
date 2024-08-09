@@ -1,10 +1,12 @@
 class script(object):   
     HELP_TXT = """𝙷𝙴𝚈 {}\n𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
 
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/Don_Settan>Don Settan</a>
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: 𝙿𝚁𝙾𝙵𝙴𝚂𝚂𝙾𝚁-𝙱𝙾𝚃 𝚟3.0.0"""
+    ABOUT_TXT ="""<b>✯ Mʏ ɴᴀᴍᴇ: {}
+✯ Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/TheBlackXYZBotz>TheBlackXYZBotz</a>
+✯ Cᴏᴅᴇᴅ Oɴ: ᴩʏᴛʜᴏɴ/ᴩʏʀᴏɢʀᴀᴍ
+✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: ᴍᴏɴɢᴏ-ᴅʙ
+✯ Mʏ Sᴇʀᴠᴇʀ: ᴀɴʏᴡʜᴇʀᴇ
+✯ Mʏ Vᴇʀꜱɪᴏɴ: Tʜᴇ Bʟᴀᴄᴋ Bᴏᴛ ᴠ1.0.2</b>"""
 
     SOURCE_TXT = """<b>NOTE:</b>
   No Data to show...

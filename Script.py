@@ -350,3 +350,7 @@ Delete A Lot Of Messages From Groups!
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 
+
+    LOGO = """ THEBLACKXYZBOTZ STARTED SERVICE IS HEALTHY ENJOY!!"""
+
+

@@ -6,7 +6,7 @@ from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
 from database.users_chats_db import db
 from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_CHANNEL, PORT, WEBHOOK
-from utils import temp, __repo__, __license__, __copyright__
+from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from datetime import datetime

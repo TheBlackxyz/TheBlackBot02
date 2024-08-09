@@ -6,7 +6,7 @@ from collections import defaultdict
 from typing import Dict, List, Union
 from pyrogram import Client
 from time import time
-from script import class
+from Script import script
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -78,17 +78,17 @@ SHORT_URL = environ.get("SHORT_URL")
 SHORT_API = environ.get("SHORT_API")
 
 #Rrq Fsub
-REQ_CHANNEL = environ.get("REQ_CHANNEL", "")
-REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else AUTH_CHANNEL
-JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 FSUB_MODE = "REQ"
+REQ_CHANNEL = environ.get("REQ_CHANNEL", "")
+JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
+REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else AUTH_CHANNEL
 
 # Others
-IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", script.CUSTOM_FILE_CAPTION)
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
+IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", script.CUSTOM_FILE_CAPTION)
 
 
 

@@ -333,17 +333,14 @@ Delete A Lot Of Messages From Groups!
 <code>/video https://youtu.be/*****</code>  """
 
     
-    BUTTON_LOCK_TEXT = """⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣"""
+    BUTTON_LOCK_TEXT = """ ⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣"""
 
-    FORCE_SUB_TEXT = """𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!"""
+    FORCE_SUB_TEXT = """ 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!"""
     
-    WELCOM_TEXT = """Hai {user}\nwelcome to {chat}"""
     
-    WELCOM_PIC = """ """
+    CUSTOM_FILE_CAPTION = """ Hey {mention}👋\n\n{file_name}\n\n♻️ size - {file_size}\n\n┣ ▫️ @TheBlackXYZ_Movies\n┣ ▫️ @TheBlackXYZ\n┣ ▫️ @TheBlackXYZBotz\n─ • ◆ •"""
     
-    CUSTOM_FILE_CAPTION = """Hey {mention}👋\n\n{file_name}\n\n♻️ size - {file_size}\n\n┣ ▫️ @TheBlackXYZ_Movies\n┣ ▫️ @TheBlackXYZ\n┣ ▫️ @TheBlackXYZBotz\n─ • ◆ •"""
-    
-    IMDB_TEMPLATE = """<b>Query: {query}</b> \n‌IMDb Data:\n\n<b>🏷 Title</b>: <a href={url}>{title}</a>\n<b>🎭 Genres</b>: {genres}\n<b>📆 Year</b>: <a href={url}/releaseinfo>{year}</a>\n<b>🌟 Rating</b>: <a href={url}/ratings>{rating}</a> / 10\n<b>☀️ Languages</b> : <code>{languages}</code>\n<b>📆 Release Info</b> : {release_date}\n\n<b>🍀Requested by🍀</b> : {message.from_user.mention}"""
+    IMDB_TEMPLATE = """ <b>Query: {query}</b> \n‌IMDb Data:\n\n<b>🏷 Title</b>: <a href={url}>{title}</a>\n<b>🎭 Genres</b>: {genres}\n<b>📆 Year</b>: <a href={url}/releaseinfo>{year}</a>\n<b>🌟 Rating</b>: <a href={url}/ratings>{rating}</a> / 10\n<b>☀️ Languages</b> : <code>{languages}</code>\n<b>📆 Release Info</b> : {release_date}\n\n<b>🍀Requested by🍀</b> : {message.from_user.mention}"""
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !

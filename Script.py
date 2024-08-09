@@ -344,3 +344,12 @@ Delete A Lot Of Messages From Groups!
     CUSTOM_FILE_CAPTION = """Hey {mention}👋\n\n{file_name}\n\n♻️ size - {file_size}\n\n┣ ▫️ @TheBlackXYZ_Movies\n┣ ▫️ @TheBlackXYZ\n┣ ▫️ @TheBlackXYZBotz\n─ • ◆ •"""
     
     IMDB_TEMPLATE = """<b>Query: {query}</b> \n‌IMDb Data:\n\n<b>🏷 Title</b>: <a href={url}>{title}</a>\n<b>🎭 Genres</b>: {genres}\n<b>📆 Year</b>: <a href={url}/releaseinfo>{year}</a>\n<b>🌟 Rating</b>: <a href={url}/ratings>{rating}</a> / 10\n<b>☀️ Languages</b> : <code>{languages}</code>\n<b>📆 Release Info</b> : {release_date}\n\n<b>🍀Requested by🍀</b> : {message.from_user.mention}"""
+
+    RESTART_TXT = """
+<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
+
+📅 Dᴀᴛᴇ : <code>{}</code>
+⏰ Tɪᴍᴇ : <code>{}</code>
+🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
+🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
+

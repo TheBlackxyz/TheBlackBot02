@@ -28,9 +28,9 @@ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ :- GitHub.com/TheBlackxyz
 
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
 
-<code>/batch https://t.me/PixelPartyUpdates https://t.me/PixelPartyUpdates</code>
+<code>/batch https://t.me/TheBlackXYZ https://t.me/TheBlackXYZ</code>
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/PixelPartyUpdates><b>Pixel Party Updates</b></a>"""
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/TheBlackXYZ><b>TʜᴇBʟᴀᴄᴋXYZ</b></a>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -340,7 +340,6 @@ Delete A Lot Of Messages From Groups!
     BUTTON_LOCK_TEXT = """ ⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣"""
 
     FORCE_SUB_TEXT = """ 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!"""
-    
     
     CUSTOM_FILE_CAPTION = """ Hey {mention}👋\n\n{file_name}\n\n♻️ size - {file_size}\n\n┣ ▫️ @TheBlackXYZ_Movies\n┣ ▫️ @TheBlackXYZ\n┣ ▫️ @TheBlackXYZBotz\n─ • ◆ •"""
     

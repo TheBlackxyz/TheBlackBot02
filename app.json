@@ -3,8 +3,8 @@
     "description": "Autofilter Bot",
     "logo": "",
     "keywords": ["telegram", "auto-filter", "MrMKN"],
-    "website": "https://github.com/TheBlackxyz/TheBlackBot-02",
-    "repository": "https://github.com/TheBlackxyz/TheBlackBot-02",
+    "website": "https://github.com/TheBlackxyz/TheBlackBot",
+    "repository": "https://github.com/TheBlackxyz/TheBlackBot",
     "env": {
         "WEBHOOK": {
             "description": "True/False if your server is web support required? the value is True else False",
@@ -48,14 +48,16 @@
             "value": "Cluster0",
             "required": false
         }
-    },
-    "buildpacks":
-        [
-            {"url": "heroku/python"}
-        ]      
+},
+    "addons": [],
+    "buildpacks": [{
+        "url": "koyeb/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
 }
 
-
-
-
-
+    

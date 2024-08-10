@@ -352,6 +352,42 @@ Delete A Lot Of Messages From Groups!
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 
+    PROGRESS_BAR = """\n
+╭━━━━❰ BlackBot Renaming... ❱━➣
+┣⪼ 🗂️ : {1} | {2}
+┣⪼ ⏳️ : {0}%
+┣⪼ 🚀 : {3}/s
+┣⪼ ⏱️ : {4}
+╰━━━━━━━━━━━━━━━➣ """
+
+    RENAME_TXT = """
+🌇 <b><u>▶️ HOW TO SET THUMBNAIL ▶️</u></b>
+  
+🔸 /set_thumb - send any picture to automatically set thumbnail.
+🔸 /del_thumb use this command and delete your old thumbnail.
+🔸 /view_thumb use this command view your current thumbnail.
+
+📑 <b><u>▶️ HOW TO SET CUSTOM CAPTION ▶️</u></b>
+
+🔹 /set_caption - set a custom caption
+🔹 /see_caption - see your custom caption
+🔹 /del_caption - delete custom caption
+
+Example:- 
+🔹 /set_caption 
+📕 File Name: {filename}
+💾 Size: {filesize}
+⏰ Duration: {duration}
+
+✅ <b><u>▶️ HOW TO RENAME A FILE ▶️</u></b>
+
+•> /rename - send any file and click rename option and type new file name and \n then select [ document, video, audio ]👈 choice this.
+"""
+
+    STREAM_TXT = """<b><u>✳️ HOW TO GET STREAM AND DOWNLOAD LINK ✳️ :</u>
+
+/stream - ɢᴇᴛ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀɴʏ ғɪʟᴇ</b>"""
+
 
     LOGO = """ THEBLACKXYZBOTZ STARTED SERVICE IS HEALTHY ENJOY!!"""
 

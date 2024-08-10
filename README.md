@@ -13,10 +13,10 @@
 
 <h1 align="center">
   
-[![Stars](https://img.shields.io/github/stars/TheBlackxyz/TheBlackBot?style=flat-square&color=yellow)](https://github.com/TheBlackxyz/TheBlackBot-02/stargazers)
-[![Forks](https://img.shields.io/github/forks/TheBlackxyz/TheBlackBot?style=flat-square&color=orange)](https://github.com/TheBlackxyz/TheBlackBot-02/fork)
-[![Size](https://img.shields.io/github/repo-size/TheBlackxyz/TheBlackBot?style=flat-square&color=green)](https://github.com/TheBlackxyz/TheBlackBot-02)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/TheBlackxyz/TheBlackBot-02)   
+[![Stars](https://img.shields.io/github/stars/TheBlackxyz/TheBlackBot?style=flat-square&color=yellow)](https://github.com/TheBlackxyz/TheBlackBot/stargazers)
+[![Forks](https://img.shields.io/github/forks/TheBlackxyz/TheBlackBot?style=flat-square&color=orange)](https://github.com/TheBlackxyz/TheBlackBot/fork)
+[![Size](https://img.shields.io/github/repo-size/TheBlackxyz/TheBlackBot?style=flat-square&color=green)](https://github.com/TheBlackxyz/TheBlackBot)   
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/TheBlackxyz/TheBlackBot)   
 [![License](https://img.shields.io/badge/License-AGPL-blue)](https://stars.medv.io/TheBlackxyz/TheBlackBot/blob/main/LICENSE)
 </h1>
 
@@ -161,7 +161,7 @@ Fork the repo and edit as per your needs.</b>
 
 ## Disclaimer 📄
 [![GNU Affero General Public License 3.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-<b>Licensed under [GNU AGPL 3.0.](https://github.com/TheBlackxyz/TheBlackBot-02/blob/TheBlackXYZBotz---Main/LICENSE)
+<b>Licensed under [GNU AGPL 3.0.](https://github.com/TheBlackxyz/TheBlackBot/blob/TheBlackXYZBotz---Main/LICENSE)
 Selling The Codes To Other People For Money Is *Strictly Prohibited*.</b>
 
 </pre>

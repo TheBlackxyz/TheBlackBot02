@@ -12,4 +12,5 @@ lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cl
 polar: # Replace with a single Polar username
 buy_me_a_coffee: TheBlackXYZBotz
 thanks_dev: # 
-custom: href="https://telegram.dog/TheBlackXYZBotz/TheBlackXYZBotz"><img alt="Telegram" src="https://img.shields.io/badge/TheBlackXYZBotz-2CA5E0?style=for-the-badge&logo=telegram&logoColor=green"/></a>
+custom:
+teligram: TheBlackXYZ

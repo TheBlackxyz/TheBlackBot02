@@ -8,11 +8,13 @@ class script(object):
 ✯ Mʏ Sᴇʀᴠᴇʀ: ᴀɴʏᴡʜᴇʀᴇ
 ✯ Mʏ Vᴇʀꜱɪᴏɴ: Tʜᴇ Bʟᴀᴄᴋ Bᴏᴛ ᴠ1.0.2</b>"""
 
-    SOURCE_TXT = """<b>NOTE:</b>
-  No Data to show...
+    SOURCE_TXT = """<b>SOURCE:</b>
+  Tʜɪs Is TʜᴇBʟᴀᴄᴋXYZBᴏᴛᴢ Dᴇᴠʟᴏᴘᴇʀʀ
 
-<b>DEVS:</b>
-- 𝙳𝚎𝚟 1<a href=https://t.me/Don_Settan>Don Settan</a>"""
+Oᴘᴇɴ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ :- GitHub.com/TheBlackxyz
+
+<b>OWNER:</b>
+- Oᴡɴᴇʀ Hᴇʟᴘ<a href=https://t.me/TheBlackXYZOwnerBot>TʜᴇBʟᴀᴄᴋXYZBᴏᴛᴢ</a>"""
 
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 

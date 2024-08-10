@@ -38,21 +38,21 @@ auth_grp = environ.get('AUTH_GROUP')
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-
-#maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
+
+# Script Import Direct
 START_MESSAGE = environ.get('START_MESSAGE', '👋 𝙷𝙴𝙻𝙾 {user}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽...')
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", script.BUTTON_LOCK_TEXT)
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', script.FORCE_SUB_TEXT)
 WELCOM_PIC = environ.get("WELCOM_PIC", '')
 WELCOM_TEXT = environ.get("WELCOM_TEXT", 'Hai {user}\nwelcome to {chat}')
-INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 
 # True Or False 
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
@@ -83,6 +83,21 @@ REQ_CHANNEL = environ.get("REQ_CHANNEL", "")
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else AUTH_CHANNEL
 
+# Rename & Stream Feature True or False 
+#Rename Mode - True or False 🤔
+RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
+
+# Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
+SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
+PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
+MULTI_CLIENT = False
+if 'DYNO' in environ:
+    ON_HEROKU = True
+else:
+    ON_HEROKU = False
+URL = environ.get("URL", "https://aesthetic-ally-theblackxyz-84907c5f.koyeb.app/") # Fill env at deoplyment time Stream Mode Is True else avoide
+
 # Others
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
@@ -90,8 +105,9 @@ IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", script.CUSTOM_FILE_CAPTION)
 
-
+# Log Str 
 LOG_STR = "Current Cusomized Configurations are:-\n"
+#LOG_STR += ("RENAME_MODE are enabled, Bot Renaming will be show rename feature for you. \n if RENAME_MODE else "RENAME_MODE are disabled.\n")
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
 LOG_STR += ("P_TTI_SHOW_OFF found , Users will be redirected to send /start to Bot PM instead of sending file file directly\n" if P_TTI_SHOW_OFF else "P_TTI_SHOW_OFF is disabled files will be send in PM, instead of sending start.\n")
 LOG_STR += ("SINGLE_BUTTON is Found, filename and files size will be shown in a single button instead of two separate buttons\n" if SINGLE_BUTTON else "SINGLE_BUTTON is disabled , filename and file_sixe will be shown as different buttons\n")

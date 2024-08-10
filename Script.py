@@ -362,13 +362,13 @@ Delete A Lot Of Messages From Groups!
 ╰━━━━━━━━━━━━━━━➣ """
 
     RENAME_TXT = """
-🌇 <b><u>▶️ HOW TO SET THUMBNAIL ▶️</u></b>
+🌇 <b><u>▶️ HOW TO SET THUMBNAIL ▶️</u>
   
 🔸 /set_thumb - send any picture to automatically set thumbnail.
 🔸 /del_thumb use this command and delete your old thumbnail.
 🔸 /view_thumb use this command view your current thumbnail.
 
-📑 <b><u>▶️ HOW TO SET CUSTOM CAPTION ▶️</u></b>
+📑 <b><u>▶️ HOW TO SET CUSTOM CAPTION ▶️</u>
 
 🔹 /set_caption - set a custom caption
 🔹 /see_caption - see your custom caption
@@ -380,10 +380,9 @@ Example:-
 💾 Size: {filesize}
 ⏰ Duration: {duration}
 
-✅ <b><u>▶️ HOW TO RENAME A FILE ▶️</u></b>
+✅ <b><u>▶️ HOW TO RENAME A FILE ▶️</u>
 
-•> /rename - send any file and click rename option and type new file name and \n then select [ document, video, audio ]👈 choice this.
-"""
+•> /rename - send any file and click rename option and type new file name and \n then select [ document, video, audio ]👈 choice this.</b>"""
 
     STREAM_TXT = """<b><u>✳️ HOW TO GET STREAM AND DOWNLOAD LINK ✳️ :</u>
 

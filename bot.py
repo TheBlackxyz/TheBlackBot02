@@ -57,7 +57,7 @@ async def start():
             spec.loader.exec_module(load)
             sys.modules["plugins." + plugin_name] = load
             print("The Black Imported => " + plugin_name)
- #   if ON_HEROKU:
+    if ON_HEROKU:
         asyncio.create_task(ping_server())
     b_users, b_chats = await db.get_banned()
     temp.BANNED_USERS = b_users

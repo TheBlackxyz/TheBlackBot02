@@ -140,12 +140,11 @@ broadcast - to broadcast a message to all Eva Maria users
 
 # Thanks To  Everyone 💞❤️
  - <b>
- - Thanks To Dan For His Awesome-[Pyrogram]
- - Thanks To [Mayuri-Chan]-[Pyrofork]
- - Thanks To [MrMKN]
- - Thanks To [Eva Mariea]
- - Thanks To [ LazyDeveloperr]
- - Thanks To [ TheBlackXYZBotz]
+ - Thanks To [pyrofork]
+ - Thanks To [IMDB][Cinemagoer]
+ - Thanks To [TheBlackXYZBotz]
+ - Thanks To [TheBlackXYZ]
+ - Thanks To [TheBlackXYZMovies]
  - Thanks To All Everyone In This Journey 💓
  - </b>
 

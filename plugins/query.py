@@ -626,33 +626,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "rename_txt":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.RENAME_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
+            InputMediaPhoto(random.choice(PICS), script.RENAME_TXT, enums.ParseMode.HTML),
+            reply_markup=reply_markup,            
         )
     elif query.data == "stream_txt":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.STREAM_TXT,
+            InputMediaPhoto(random.choice(PICS), script.STREAM_TXT, enums.ParseMode.HTML),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "source":
         buttons = [[

@@ -156,7 +156,7 @@ broadcast - to broadcast a message to all Eva Maria users
 
 <b>[Note To A So Called Dev](https://telegram.dog/TheBlackXYZBotz): 
 
-Fork the repo and edit as per your needs.</b>
+Fork the repo and edit as per your needs other wise copyright prohibited 🚫 ©️TheBlackxyz</b>
 
 ## Disclaimer 📄
 [![GNU Affero General Public License 3.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    

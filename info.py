@@ -21,15 +21,14 @@ def is_enabled(value, default):
 PORT = environ.get("PORT", "8080")
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+API_ID = int(environ.get('API_ID', '29450452'))
+API_HASH = environ.get('API_HASH', '54759945ff88b52777eec9a455944d31')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 PICS = (environ.get('PICS' ,'https://telegra.ph/file/517bc12dd5c1347df10f6.jpg')).split()
 BOT_START_TIME = time()
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 
 # Admins, Channels & Users
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
@@ -46,6 +45,7 @@ DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
+CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 
 # Script Import Direct
 START_MESSAGE = environ.get('START_MESSAGE', '👋 𝙷𝙴𝙻𝙾 {user}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽...')
@@ -70,27 +70,21 @@ SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MELCOW_NEW_USERS = is_enabled(environ.get('MELCOW_NEW_USERS', "True"), True)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 
-# Bg Remove 
-RemoveBG_API = environ.get("RemoveBG_API", '')
+# Bg Remove And Url Shotner 
+RemoveBG_API = environ.get("RemoveBG_API", 'f7stCpqeKmuDeHMX66qH5V8D')
+SHORT_URL = environ.get("SHORT_URL", 'yamlinks.com')
+SHORT_API = environ.get("SHORT_API", '8ba797ded52d10834ad44fc07bf9c659a67167d4')
 
-# url shortner
-SHORT_URL = environ.get("SHORT_URL")
-SHORT_API = environ.get("SHORT_API")
-
-# Channel Links 💸
+# Channel Links 💸 
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/TheBlackXYZ_Movie_Group')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TheBlackXYZ')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'The_Black_XYZ_SupportChat') # Support Chat Links Without https:// or @
-
-
-#Rrq Fsub
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'The_Black_XYZ_SupportChat') without @
 FSUB_MODE = "REQ"
-REQ_CHANNEL = environ.get("REQ_CHANNEL", "")
+REQ_CHANNEL = environ.get("REQ_CHANNEL", "TheBlackXYZBotz")
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else AUTH_CHANNEL
 
-# Rename & Stream Feature True or False 
-#Rename Mode - True or False 🤔
+# Rename & Stream Feature True or False
 RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
 
 # Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.

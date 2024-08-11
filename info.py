@@ -77,6 +77,12 @@ RemoveBG_API = environ.get("RemoveBG_API", '')
 SHORT_URL = environ.get("SHORT_URL")
 SHORT_API = environ.get("SHORT_API")
 
+# Channel Links 💸
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/TheBlackXYZ_Movie_Group')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TheBlackXYZ')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'The_Black_XYZ_SupportChat') # Support Chat Links Without https:// or @
+
+
 #Rrq Fsub
 FSUB_MODE = "REQ"
 REQ_CHANNEL = environ.get("REQ_CHANNEL", "")
@@ -99,7 +105,6 @@ else:
 URL = environ.get("URL", "https://aesthetic-ally-theblackxyz-84907c5f.koyeb.app/") # Fill env at deoplyment time Stream Mode Is True else avoide
 
 # Others
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)

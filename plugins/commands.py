@@ -125,103 +125,29 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-	            if STREAM_MODE == True:
-                    # Create the inline keyboard button with callback_data
-                    user_id = message.from_user.id
-                    username =  message.from_user.mention 
-
-                    log_msg = await client.send_cached_media(
-                        chat_id=LOG_CHANNEL,
-                        file_id=msg.get("file_id"),
-                    )
-                    fileName = {quote_plus(get_name(log_msg))}
-                    stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-                    download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
- 
-                    await log_msg.reply_text(
-                        text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• Fɪʟᴇ Nᴀᴍᴇl : {fileName}",
-                        quote=True,
-                        disable_web_page_preview=True,
-                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fast Download", url=download),  # we download Link
-                                                            InlineKeyboardButton('Watch online', url=stream)]])  # web stream Link
-                    )
-                if STREAM_MODE == True:
-                    button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                    ],[
-                        InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://https://t.me/Itz_rohan_24")
-                    ],[
-                        InlineKeyboardButton("Fast Download", url=download),  # we download Link
-                        InlineKeyboardButton('Watch online', url=stream)
-                    ],[
-                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
-                    ]]
-                else:
-                    button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                    ],[
-                        InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://https://t.me/Itz_rohan_24")
-                    ]]
-                msg = await client.send_cached_media(
+	        await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(button)
-                )
-                filesarr.append(msg)
-                
+                    )
             except FloodWait as e:
-                await asyncio.sleep(e.x)
+                await asyncio.sleep(e.value)
                 logger.warning(f"Floodwait of {e.x} sec.")
-                msg = await client.send_cached_media(
+                await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(button)
-                )
-                filesarr.append(msg)
-                k = await client.send_message(chat_id = message.from_user.id, text=f"<b>IMPORTANT</b>\n\nDue to Copyright Issues This File will be deleted in 10 mins.\n\n<b>Please forward this File/Video to your Saved Messages and Start Download there.</b>")
-                await asyncio.sleep(600)
-                for x in filesarr:
-                    await x.delete()
-                await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
-            
+                    )
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
             await asyncio.sleep(1) 
         await sts.delete()
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>IMPORTANT</b>\n\nDue to Copyright Issues This File will be deleted in 10 mins.\n\n<b>Please forward this File/Video to your Saved Messages and Start Download there.</b>")
-        await asyncio.sleep(600)
-        for x in filesarr:
-            await x.delete()
-        await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")       
+		
         return
-             #   await client.send_cached_media(
-             #       chat_id=message.from_user.id,
-             #       file_id=msg.get("file_id"),
-              #      caption=f_caption,
-             #       protect_content=msg.get('protect', False),
-              #      )
-         #   except FloodWait as e:
-         #       await asyncio.sleep(e.value)
-           #     logger.warning(f"Floodwait of {e.x} sec.")
-            #    await client.send_cached_media(
-             #       chat_id=message.from_user.id,
-            #        file_id=msg.get("file_id"),
-              #      caption=f_caption,
-           #         protect_content=msg.get('protect', False),
-              #      )
-       #     except Exception as e:
-         #       logger.warning(e, exc_info=True)
-         #       continue
-        #    await asyncio.sleep(1) 
-     #   await sts.delete()
-  #      return
+		
     elif data.split("-", 1)[0] == "DSTORE":
         sts = await message.reply("Please wait")
         b_string = data.split("-", 1)[1]

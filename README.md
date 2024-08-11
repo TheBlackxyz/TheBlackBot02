@@ -46,7 +46,7 @@
 - [x] Broadcast
 - [x] IMDB Search
 - [x] Inline Search
-- [x] Pics Choose 
+- [x] Pics Bot
 - [x] Ids And User Info
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
 - [x] Ai Spelling Check Feature
@@ -66,7 +66,7 @@
 - [x] Photo Changing In All Buttons
 - [x] Custom Start Message
 - [x] Custom Button Alter Message
-- [x] Advanced Status (Disk, Cpu, Ram, Uptime..) In Image Type
+- [x] Advanced Status (Disk, Cpu, Ram, Uptime..)
 
 
 <summary><b>Variables</b></summary>
@@ -136,6 +136,9 @@ ban_user  - to ban a user.
 unban_user  - to unban a user.
 channel - to get list of total connected channels
 broadcast - to broadcast a message to all Eva Maria users
+font - send you want modified text
+stream - send only file to watch & downloads
+rename - send files only to rename files up to 2GB Only 
 ```
 
 # Thanks To  Everyone 💞❤️

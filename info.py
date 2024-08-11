@@ -78,7 +78,7 @@ SHORT_API = environ.get("SHORT_API", '8ba797ded52d10834ad44fc07bf9c659a67167d4')
 # Channel Links 💸 
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/TheBlackXYZ_Movie_Group')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TheBlackXYZ')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'The_Black_XYZ_SupportChat') without @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'The_Black_XYZ_SupportChat') # without @
 FSUB_MODE = "REQ"
 REQ_CHANNEL = environ.get("REQ_CHANNEL", "TheBlackXYZBotz")
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)

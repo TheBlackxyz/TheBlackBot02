@@ -25,10 +25,10 @@ from image.edit_4 import rotate_90, rotate_180, rotate_270, inverted, round_stic
 from image.edit_5 import normalglitch_1, normalglitch_2, normalglitch_3, normalglitch_4, normalglitch_5, scanlineglitch_1, scanlineglitch_2, scanlineglitch_3, scanlineglitch_4, scanlineglitch_5
 
 # configuration
-from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, PICS, IMDB, PM_IMDB, SINGLE_BUTTON, PROTECT_CONTENT, \
-    SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, BUTTON_LOCK_TEXT, SHORT_URL, SHORT_API
+#from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, PICS, IMDB, PM_IMDB, SINGLE_BUTTON, PROTECT_CONTENT, \
+#    SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, BUTTON_LOCK_TEXT, SHORT_URL, SHORT_API
 from info import REQ_CHANNEL
-
+from info import *
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
@@ -569,15 +569,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":                        
         buttons = [[
             InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
-            ],[
+            ], [
             InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''), 
             InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=CHNL_LNK)
-            ],[
-	        InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿', url=SUPPORT_CHAT),
+            ], [
+            InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿', url=SUPPORT_CHAT),
             InlineKeyboardButton('𝙼𝙾𝚅𝙸𝙴 𝙶𝚁𝙾𝚄𝙿', url=GRP_LNK)
-	        ],[
+	    ], [
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
-            InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")
+	    InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(

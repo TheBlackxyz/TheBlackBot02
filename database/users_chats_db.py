@@ -145,5 +145,32 @@ class Database:
     async def get_db_size(self):
         return (await self.db.command("dbstats"))['dataSize']
 
+    async def set_thumbnail(self, id, file_id):
+        await self.col.update_one({'id': int(id)}, {'$set': {'file_id': file_id}})
+
+    async def get_thumbnail(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('file_id', None)
+
+    async def set_caption(self, id, caption):
+        await self.col.update_one({'id': int(id)}, {'$set': {'caption': caption}})
+
+    async def get_caption(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('caption', None)
+
+    async def set_msg_command(self, id, com):
+        await self.col.update_one({'id': int(id)}, {'$set': {'message_command': com}})
+
+    async def get_msg_command(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('message_command', None)
+
+    async def set_save(self, id, save):
+        await self.col.update_one({'id': int(id)}, {'$set': {'save': save}})
+
+    async def get_save(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('save', False) 
 
 db = Database(DATABASE_URI, DATABASE_NAME)

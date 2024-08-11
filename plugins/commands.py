@@ -41,13 +41,10 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
-            ], [
+            ],[
             InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=CHNL_LNK)
-            ], [
-	    InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿', url=SUPPORT_CHAT),
-            InlineKeyboardButton('𝙼𝙾𝚅𝙸𝙴 𝙶𝚁𝙾𝚄𝙿', url=GRP_LNK)
-	    ], [
+            InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url="https://t.me/TheBlackXYZ")
+            ],[      
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
             InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")
         ]]
@@ -66,13 +63,10 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
-            ], [
+            ],[
             InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=CHNL_LNK)
-            ], [
-	    InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿', url=SUPPORT_CHAT),
-            InlineKeyboardButton('𝙼𝙾𝚅𝙸𝙴 𝙶𝚁𝙾𝚄𝙿', url=GRP_LNK)
-	    ], [
+            InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url="https://t.me/TheBlackXYZ")
+            ],[      
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
             InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")
         ]]

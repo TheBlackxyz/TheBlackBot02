@@ -8,13 +8,14 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
 from database.users_chats_db import db
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, START_MESSAGE, FORCE_SUB_TEXT, SUPPORT_CHAT
+from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, START_MESSAGE, FORCE_SUB_TEXT
 from utils import get_settings, get_size, is_subscribed, save_group_settings, temp
 from database.connections_mdb import active_connection
 import re
 from plugins.fsub import ForceSub
 import json
 import base64
+from info import CHNL_LNK, SUPPORT_CHAT, GRP_LNK
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
@@ -24,6 +25,8 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
             InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url=f'https://t.me/{SUPPORT_CHAT}')
+            ],[
+            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
             ],[
             InlineKeyboardButton('𝙷𝙴𝙻𝙿', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
@@ -42,8 +45,10 @@ async def start(client, message):
             InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url="https://t.me/TheBlackXYZ")
-            ],[      
+            InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=CHNL_LNK)
+            ],[
+            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+            ],[
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
             InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")
         ]]
@@ -64,7 +69,9 @@ async def start(client, message):
             InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url="https://t.me/TheBlackXYZ")
+            InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=CHNL_LNK)
+            ],[
+            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
             ],[      
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
             InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")

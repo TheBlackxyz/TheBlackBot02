@@ -6,7 +6,6 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram import Client, filters, enums 
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 
-
 from Script import script
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
 from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings, get_shortlink
@@ -15,6 +14,8 @@ from database.ia_filterdb import Media, get_file_details, get_search_results, ge
 from database.filters_mdb import del_all, find_filter, get_filters
 from database.gfilters_mdb import find_gfilter, get_gfilters
 from plugins.helper.admin_check import admin_fliter
+from urllib.parse import quote_plus
+from util.file_properties import get_name, get_hash, get_media_file_size
 
 # image editor tools
 from image.edit_1 import bright, mix, black_white, g_blur, normal_blur, box_blur
@@ -523,6 +524,47 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except:
             await query.message.edit(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name))
 
+    elif query.data.startswith("generate_stream_link"):
+        _, file_id = query.data.split(":")
+        try:
+            user_id = query.from_user.id
+            username =  query.from_user.mention 
+
+            log_msg = await client.send_cached_media(
+                chat_id=LOG_CHANNEL,
+                file_id=file_id,
+            )
+            fileName = {quote_plus(get_name(log_msg))}
+            stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+
+            xo = await query.message.reply_text(f'🔐')
+            await asyncio.sleep(1)
+            await xo.delete()
+
+            await log_msg.reply_text(
+                text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
+                quote=True,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fast Download", url=download),  # we download Link
+                                                    InlineKeyboardButton('Watch online', url=stream)]])  # web stream Link
+            )
+            button = [[
+                InlineKeyboardButton("Fast Download", url=download),
+                InlineKeyboardButton('Watch online', url=stream)
+            ],[
+                InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
+            ]]
+            await query.message.reply_text(
+                text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
+                quote=True,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(button)
+            )
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"☣something went wrong sweetheart\n\n{e}", show_alert=True)
+            return
 
     elif query.data == "start":                        
         buttons = [[

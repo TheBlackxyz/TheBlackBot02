@@ -47,7 +47,8 @@ async def start(client, message):
             InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''), 
             InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=CHNL_LNK)
             ],[
-            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK),
+            InlineKeyboardButton('CHAT GROUP', url=SUPPORT_CHAT)
             ],[
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
             InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")
@@ -71,7 +72,8 @@ async def start(client, message):
             InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''), 
             InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=CHNL_LNK)
             ],[
-            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK),
+            InlineKeyboardButton('CHAT GROUP', url=SUPPORT_CHAT)
             ],[      
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
             InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")

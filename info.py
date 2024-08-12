@@ -29,16 +29,16 @@ BOT_START_TIME = time()
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1759982322').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001853074923 -1001565553195 -1002112912927 -1001889509068 -1001565553195').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_grp = environ.get('AUTH_GROUP')
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_grp = environ.get('AUTH_GROUP', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001889509068')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001860177906')).split()]
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
@@ -56,7 +56,7 @@ WELCOM_TEXT = environ.get("WELCOM_TEXT", 'Hai {user}\nwelcome to {chat}')
 
 # True Or False 
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
-MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
+MAX_LIST_ELM = environ.get("MAX_LIST_ELM", '10')
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
 PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
@@ -85,10 +85,10 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else AUTH_CHANNEL
 
 # Rename & Stream Feature True or False
-RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
+RENAME_MODE = bool(environ.get('RENAME_MODE', False)) # Set True or False
 
 # Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 MULTI_CLIENT = False

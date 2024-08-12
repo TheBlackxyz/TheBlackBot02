@@ -28,8 +28,6 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-            InlineKeyboardButton('CHAT GROUP', url=SUPPORT_CHAT)
-            ],[
             InlineKeyboardButton('𝙷𝙴𝙻𝙿', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
@@ -50,8 +48,6 @@ async def start(client, message):
             InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=CHNL_LNK)
             ],[
             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
-            ],[
-            InlineKeyboardButton('CHAT GROUP', url=SUPPORT_CHAT)
             ],[
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
             InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")
@@ -77,8 +73,6 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-            InlineKeyboardButton('CHAT GROUP', url=SUPPORT_CHAT)
-            ],[      
             InlineKeyboardButton("𝙷𝙴𝙻𝙿", callback_data="help"),
             InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data="about")
         ]]

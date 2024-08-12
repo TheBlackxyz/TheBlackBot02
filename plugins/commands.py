@@ -26,7 +26,8 @@ async def start(client, message):
         buttons = [[           
             InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url=f'https://t.me/{SUPPORT_CHAT}')
             ],[
-            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK),
+            InlineKeyboardButton('CHAT GROUP', url=SUPPORT_CHAT)
             ],[
             InlineKeyboardButton('𝙷𝙴𝙻𝙿', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]

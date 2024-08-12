@@ -16,7 +16,7 @@ from database.gfilters_mdb import find_gfilter, get_gfilters
 from plugins.helper.admin_check import admin_fliter
 from urllib.parse import quote_plus
 from util.file_properties import get_name, get_hash, get_media_file_size
-from ingo import CHNL_LNK, GRP_LNK
+from info import CHNL_LNK, GRP_LNK
 # image editor tools
 from image.edit_1 import bright, mix, black_white, g_blur, normal_blur, box_blur
 from image.edit_2 import circle_with_bg, circle_without_bg, sticker, edge_curved, contrast, sepia_mode, pencil, cartoon                             

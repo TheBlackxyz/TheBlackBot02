@@ -96,7 +96,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://aesthetic-ally-theblackxyz-84907c5f.koyeb.app/") # Fill env at deoplyment time Stream Mode Is True else avoide
+URL = environ.get("URL", "https://enormous-carol-theblackxyz9021-2822c420.koyeb.app/") # Fill env at deoplyment time Stream Mode Is True else avoide
 
 # Others
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)

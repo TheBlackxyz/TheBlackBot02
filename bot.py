@@ -29,7 +29,6 @@ from aiohttp import web
 from plugins import web_server
 # bot login info
 from bot import TheBlackBot
-from util.keepalive import ping_server
 from bot.clients import initialize_clients
 from datetime import datetime
 from pytz import timezone
@@ -57,8 +56,6 @@ async def start():
             spec.loader.exec_module(load)
             sys.modules["plugins." + plugin_name] = load
             print("The Black Imported => " + plugin_name)
-    if ON_HEROKU:
-        asyncio.create_task(ping_server())
     b_users, b_chats = await db.get_banned()
     temp.BANNED_USERS = b_users
     temp.BANNED_CHATS = b_chats

@@ -10,7 +10,7 @@ import asyncio
 import logging
 from info import *
 from pyrogram import Client
-from util.config_parser import TokenParser
+from TheBlack.config_parser import TokenParser
 from bot import multi_clients, work_loads, TheBlackBot
 
 

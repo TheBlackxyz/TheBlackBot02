@@ -152,21 +152,19 @@ these are the extra features of this bot
 <b>᚛› 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code></b>
 <b>᚛› 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>
 <b>᚛› 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>"""
-    LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
     
+    LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
 <b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}(<code>{b}</code>)</b>
 <b>᚛› 𝐆 𝐈𝐃 ⪼ @{c}
 <b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ {d}</b>
 <b>᚛› 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ⪼ {e}</b>
-
 By {f}
 """
-    LOG_TEXT_P = """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
     
+    LOG_TEXT_P = """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
 <b>᚛› 𝐈𝐃 - <code>{}</code></b>
 <b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
 <b>᚛› 𝐔𝐍 - @{}</b>
-
 By @{} """
    
     ZOMBIES_TXT = """𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙺𝙸𝙲𝙺 𝚄𝚂𝙴𝚁𝚂
@@ -179,14 +177,6 @@ By @{} """
 • /inkick within_month long_time_ago - to kick users who are offline for more than 6-7 days.
 • /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.
 • /dkick - to kick deleted accounts."""
-
-    IMAGE_TXT = """➤ 𝐇𝐞𝐥𝐩: Iᴍᴀɢᴇ
-
-𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚎𝚍𝚒𝚝 𝚒𝚖𝚊𝚐𝚎 𝚟𝚎𝚛𝚢 𝚎𝚊𝚜𝚒𝚕𝚢 
-
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
-
-➪ 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺 𝗂𝗆𝖺𝗀𝖾 𝗍𝗈 𝖾𝖽𝗂𝗍 ✨"""
 
     RESTRIC_TXT = """➤ 𝐇𝐞𝐥𝐩: Mᴜᴛᴇ 🚫
 
@@ -219,33 +209,6 @@ By @{} """
 ◉ /pin :- 𝚃𝙾 𝙿𝙸𝙽 𝚃𝙷𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙾𝙽 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝚃𝚂
 ◉ /unpin :- 𝚃𝙾 𝚄𝙽𝙿𝙸𝙽 𝚃𝙷𝙴 𝙲𝚄𝚁𝚁𝙴𝙴𝙽𝚃 𝙿𝙸𝙽𝙽𝙴𝙳 𝙼𝙴𝚂𝙰𝙰𝙶𝙴"""
 
-    PASTE_TXT = """Help: <b>Paste</b>
-
-Paste some texts or documents on a website!
-
-<b>Commands and Usage:</b>
-
-• /paste [text] - paste the given text on Pasty
-
-<b>NOTE:</b>
-
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
-
-Translate text to speech
-
-<b>Commands and Usage:</b>
-
-• /tts <text> : convert text to speech
-
-<b>NOTE:</b>
-
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• IMDb can translate texts to 200+ languages."""
-
     PINGS_TXT ="""<b>🌟 Ping:</b>
 
 Helps you to know your ping 🚶🏼‍♂️
@@ -259,33 +222,6 @@ Helps you to know your ping 🚶🏼‍♂️
 • This commands can be used in pms and groups
 • This commands can be used buy everyone in the groups and bots pm
 • Share us for more features"""
-
-    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
-
-Do as you wish with telegra.ph module!
-
-</b>USAGE:</b>
-
-🤧 /telegraph - Send me this command reply with Picture or Vide Under (5MB) 
-
-<b>NOTE:</b>
-
-• This Command Is Available in goups and pms
-• This Command Can be used by everyone"""
-
-    JSON_TXT ="""<b>JSON:</b>
-
-Bot returns json for all replied messages with /json
-
-<b>Features:</b>
-
-Message Editting JSON
-Pm Support
-Group Support
-
-<b>Note:</b>
-
-Everyone can use this command , if spaming happens bot will automatically ban you from the group."""
 
     PURGE_TXT = """<b>Purge</b>
     
@@ -308,34 +244,6 @@ Delete A Lot Of Messages From Groups!
     DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
       
     FETCHING_INFO = """<b>ഇപ്പൊ എല്ലാം അടിച്ചുമാറ്റി തരാം...</b>"""
-      
-    CARB_TXT = """☾︎𝗛𝗘𝗟𝗣 𝗙𝗢𝗥 𝗖𝗔𝗥𝗕𝗢𝗡☽︎
-𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝚂 𝙰 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝙾 𝙼𝙰𝙺𝙴 𝚃𝙷𝙴 𝙸𝙼𝙰𝙶𝙴 𝙰𝚂 𝚂𝙷𝙾𝚆𝙽 𝙸𝙽 𝚃𝙷𝙴 𝚃𝙾𝙿 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁𝙴 𝚃𝙴𝚇𝚃𝚂.
-𝙵𝙾𝚁 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙴 𝙼𝙾𝙳𝚄𝙻𝙴 𝙹𝚄𝚂𝚃 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝚃𝙴𝚇𝚃 𝙰𝙽𝙳 𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙸𝚃 𝚆𝙸𝚃𝙷 /carbon 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚃𝙷𝙴 𝙱𝙾𝚃 𝚆𝙸𝙻𝙻 𝚁𝙴𝙿𝙻𝚈 𝚆𝙸𝚃𝙷 𝚃𝙷𝙴 𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝙼𝙰𝙶𝙴"""
-
-    FOND_TXT = """☾︎𝗛𝗘𝗟𝗣 𝗙𝗢𝗥 𝗙𝗢𝗡𝗧𝗦☽︎
-𝙵𝙾𝙽𝚃 𝙸𝚂 𝙰 𝙼𝙾𝙳𝚄𝙻𝙴 𝙵𝙾𝚁 𝙼𝙰𝙺𝙴 𝚈𝙾𝚄𝚁 𝚃𝙴𝚇𝚃 𝚂𝚃𝚈𝙻𝙸𝚂𝙷.
-𝙵𝙾𝚁 𝚄𝚂𝙴 𝚃𝙷𝙰𝚃 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝚈𝙿𝙴 /font <your text> 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄𝚁 𝚃𝙴𝚇𝚃 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈."""
-
-    SHARE_TXT = """☾︎𝗛𝗘𝗟𝗣 𝗙𝗢𝗥 𝗦𝗛𝗔𝗥𝗘 𝗧𝗘𝗫𝗧☽︎
-
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
-• /share - 𝚁𝚎𝚙𝚕𝚢 𝚆𝚒𝚝𝚑 𝙰𝚗𝚢 𝚃𝚎𝚡𝚝 𝚃𝚘 𝚂𝚎𝚗𝚍 𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 """
-
-    YTDL = """<b>𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
-
-🍁 𝘜𝘴𝘢𝘨𝘦
-𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘖𝘳 𝘈𝘶𝘥𝘪𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
-
-𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-• /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
-• /video or /mp4 𝘈𝘯𝘥 https://youtu.be/*****
-
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
-<code>/song mkn</code>
-<code>/mp4 https://youtu.be/*******</code>
-<code>/video https://youtu.be/*****</code>  """
-
     
     BUTTON_LOCK_TEXT = """ ⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣"""
 
@@ -352,42 +260,6 @@ Delete A Lot Of Messages From Groups!
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
-
-    PROGRESS_BAR = """\n
-╭━━━━❰ BlackBot Renaming... ❱━➣
-┣⪼ 🗂️ : {1} | {2}
-┣⪼ ⏳️ : {0}%
-┣⪼ 🚀 : {3}/s
-┣⪼ ⏱️ : {4}
-╰━━━━━━━━━━━━━━━➣ """
-
-    RENAME_TXT = """
-🌇 <b><u>▶️ HOW TO SET THUMBNAIL ▶️</u>
-  
-🔸 /set_thumb - send any picture to automatically set thumbnail.
-🔸 /del_thumb use this command and delete your old thumbnail.
-🔸 /view_thumb use this command view your current thumbnail.
-
-📑 <b><u>▶️ HOW TO SET CUSTOM CAPTION ▶️</u>
-
-🔹 /set_caption - set a custom caption
-🔹 /see_caption - see your custom caption
-🔹 /del_caption - delete custom caption
-
-Example:- 
-🔹 /set_caption 
-📕 File Name: {filename}
-💾 Size: {filesize}
-⏰ Duration: {duration}
-
-✅ <b><u>▶️ HOW TO RENAME A FILE ▶️</u>
-
-•> /rename - send any file and click rename option and type new file name and \n then select [ document, video, audio ]👈 choice this.</b>"""
-
-    STREAM_TXT = """<b><u>✳️ HOW TO GET STREAM AND DOWNLOAD LINK ✳️ :</u>
-
-/stream - ɢᴇᴛ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀɴʏ ғɪʟᴇ</b>"""
-
 
     LOGO = """ THEBLACKXYZBOTZ STARTED SERVICE IS HEALTHY ENJOY!!"""
 
